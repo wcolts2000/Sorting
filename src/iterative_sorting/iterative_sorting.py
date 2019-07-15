@@ -47,13 +47,19 @@ def bubble_sort(arr):
     #             arr[j], arr[j+1] = arr[j+1], arr[j]
     swapped = False
     for i in range(len(arr) - 1, 0, -1):
-        for j in range(0, len(arr) - 1):
+        for j in range(0, i):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 swapped = True
         if not swapped:
             break
     return arr
+
+
+arr = [3, 4, 9, 2, 1, 0, 8, 7]
+
+bubble_sort(arr)
+print(arr)
 
 # STRETCH: implement the Count Sort function below
 
