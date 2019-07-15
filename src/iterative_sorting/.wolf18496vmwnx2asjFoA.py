@@ -7,13 +7,14 @@ Repeat finding the next-smallest card, and swapping it into the correct position
 '''
 
 
+def swap(arr, i, j):
+    temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+
+
 def selection_sort(arr):
     # loop through n-1 elements
-
-    def swap(arr, i, j):
-        temp = arr[i]
-        arr[i] = arr[j]
-        arr[j] = temp
 
     for i in range(0, len(arr)):
         cur_index = i
@@ -30,7 +31,7 @@ def selection_sort(arr):
     return arr
 
 
-# arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 # selection_sort(arr1)
 # print(arr1)
 
@@ -45,23 +46,28 @@ def bubble_sort(array):
 
 
 def bubble_sort(arr):
-    # for i in range(0, len(arr) - 1):
-    #     for j in range(0, len(arr) - 1 - i):
-    #         if arr[j] > arr[j+1]:
-    #             arr[j], arr[j+1] = arr[j+1], arr[j]
     swapped = False
-    for i in range(len(arr) - 1, 0, -1):
-        for j in range(0, len(arr) - 1):
+    for i in range(len(arr)):
+        for j in range(len(arr)-1):
             if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swap(arr, arr[j], arr[j+1])
                 swapped = True
-        if not swapped:
+        if swapped == False:
             exit()
+        bubble_sort(arr)
+    # bubble_sort(arr)
+
+    # if arr[j]
     return arr
+    # for i in range(len(arr), 0, -1):
+    #     for j in range(len(arr)-1):
+    #         if arr[j] > arr[j+1]:
+    #             swap(arr, arr[j], arr[j+1])
+    # return arr
 
 
-# bubble_sort(arr1)
-# print(arr1)
+bubble_sort(arr1)
+print(arr1)
 # STRETCH: implement the Count Sort function below
 
 
