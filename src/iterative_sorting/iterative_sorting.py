@@ -30,10 +30,6 @@ def selection_sort(arr):
     return arr
 
 
-# arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
-# selection_sort(arr1)
-# print(arr1)
-
 # TO-DO:  implement the Bubble Sort function below
 '''
 def bubble_sort(array):
@@ -59,9 +55,6 @@ def bubble_sort(arr):
             exit()
     return arr
 
-
-# bubble_sort(arr1)
-# print(arr1)
 # STRETCH: implement the Count Sort function below
 
 
