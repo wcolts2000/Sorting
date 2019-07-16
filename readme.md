@@ -14,16 +14,17 @@ That being said, please still use the 20 minute rule :slightly_smiling_face:
 
 [x] - Open up the [iterative_sorting](src/iterative_sorting) directory
 
-- Read through the descriptions of the `bubble_sort` and `selection_sort` algorithms
-- Implement `bubble_sort` and `selection_sort` in [iterative_sorting.py](src/iterative_sorting/iterative_sorting.py)
-- Test your implementation by running `test_iterative.py`
+[x] - Read through the descriptions of the `bubble_sort` and `selection_sort` algorithms
+[x] - Implement `bubble_sort` and `selection_sort` in [iterative_sorting.py](src/iterative_srting/iterative_sorting.py)
+[x] - Test your implementation by running `test_iterative.py`
 
 # Part 2
 
 ## MVP Tasks
 
-- Open up the [recursive_sorting](src/recursive_sorting) directory
-- Read through the descriptions of the `merge_sort` algorithm
+[x] - Open up the [recursive_sorting](src/recursive_sorting) directory
+[x] - Read through the descriptions of the `merge_sort` algorithm
+
 - Implement `merge_sort` in [recursive_sorting.py](src/recursive_sorting/recursive_sorting.py)
 - Test your implementation by running `test_recursive.py`
 
