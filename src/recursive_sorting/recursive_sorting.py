@@ -37,13 +37,12 @@ def merge_sort(arr):
     left = merge_sort(arr[:midpoint])
     right = merge_sort(arr[midpoint:])
 
-    # merge_sort(left)
-    # merge_sort(right)
     return merge(left, right)
 
 
 arr = [1, 9, 5, 3]
 arr2 = merge_sort(arr)
+merge_sort(arr)
 print(arr2)
 # STRETCH: implement an in-place merge sort algorithm
 

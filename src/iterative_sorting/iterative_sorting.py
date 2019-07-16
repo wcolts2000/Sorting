@@ -55,6 +55,15 @@ def bubble_sort(arr):
         if not swapped:
             break
     return arr
+    # RECURSIVE VARIATION
+    # for j in range(len(arr) - 1):
+    #     if arr[j] > arr[j+1]:
+    #         arr[j], arr[j+1] = arr[j+1], arr[j]
+    #         swapped = True
+    # if not swapped:
+    #     return arr
+
+    # return bubble_sort(arr)
 
 
 arr = [0, 9, 3, 8, 41, 985, 6514, 6, 2]
