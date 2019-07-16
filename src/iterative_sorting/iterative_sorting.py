@@ -55,6 +55,7 @@ def bubble_sort(arr):
     #     if not swapped:
     #         break
     for i in range(len(arr)-1):
+        swapped = False
         for j in range(len(arr) - i - 1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
@@ -77,7 +78,7 @@ def bubble_sort(arr):
 arr = [0, 9, 3, 8, 41, 985, 6514, 6, 2]
 # STRETCH: implement the Count Sort function below
 bubble_sort(arr)
-print(arr)
+print('arr', arr)
 
 
 def count_sort(arr, maximum=-1):
